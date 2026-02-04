@@ -53,12 +53,17 @@ a {
   font-size: 1.2rem;
 }
 
+.nav {
+  transition: all 0.3s ease;
+}
+
 .nav ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 22px;
 }
+
 
 .nav a {
   color: var(--muted);
@@ -228,3 +233,4 @@ copyright {
     display: block;
   }
 }
+
