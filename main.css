@@ -221,16 +221,28 @@ copyright {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .nav.nav-open {
+    max-height: 400px;
   }
 
   .nav ul {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
   }
 }
+
+
 
